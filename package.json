@@ -1,6 +1,9 @@
 {
   "name": "grf_2",
   "version": "0.0.1",
+  "engines": {
+    "node": "15.x"
+  },
   "description": "apiGRF",
   "main": "src/index.js",
   "scripts": {
@@ -10,7 +13,7 @@
   "author": "David Herrera",
   "license": "MIT",
   "dependencies": {
-    "bcrypt": "^5.0.0",
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "connect-multiparty": "^2.2.0",
     "cors": "^2.8.5",
