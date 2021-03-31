@@ -21,6 +21,7 @@ routesV1(app);
 //conexion base de datos y puerto
 const PORT = process.env.PORT || 5000
 const direccionIp = "192.168.1.12"
+const url = "https://grf1.herokuapp.com/"
 
 mongoose.connect(process.env.MONGO, {
   useNewUrlParser: true,
@@ -29,7 +30,7 @@ mongoose.connect(process.env.MONGO, {
   useCreateIndex: true
 }).then(()=>{
     console.log("Conectado a Mongo");
-    app.listen(PORT, direccionIp,()=>{
+    app.listen(url,()=>{
         console.log(`Running on ${PORT}`);
     })
 }).catch(error=>{
