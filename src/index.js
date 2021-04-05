@@ -31,7 +31,7 @@ mongoose.connect(process.env.MONGO, {
 }).then(()=>{
     console.log("Conectado a Mongo");
     app.listen(8080,()=>{
-        console.log(`Running on ${PORT}`);
+        // console.log(`Running on ${PORT}`);
     })
 }).catch(error=>{
     console.log("Mongo error= " + error);
