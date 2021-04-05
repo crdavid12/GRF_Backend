@@ -1,5 +1,5 @@
 const users = require('../../modules/v1/user-modules');
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
 
 const login = async (req, res)=>{
     try {
@@ -40,12 +40,12 @@ const createUser = async (req, res) =>{
     try {
         const{nombre, password, role} = req.body;
 
-        const hash = await bcrypt.hash(password, 15);
+        // const hash = await bcrypt.hash(password, 15);
 
         await user.create({
             nombre,
             password,
-            hash,
+            // hash,
             role
         })
 
