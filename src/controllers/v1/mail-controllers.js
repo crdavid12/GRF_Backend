@@ -7,8 +7,8 @@ const postCorreo = async (req, res) =>{
 
         await transporter.sendMail({
             // from: '"Fred Foo 👻" <crdavid12@hotmail.com>', // sender address
-            from: 'crdavid12@hotmail.com', // sender address
-            to: "davidherre03@gmail.com", // list of receivers
+            from: 'grochafer@gmail.com', // sender address
+            to: "grochafer@gmail.com", // list of receivers
             subject: "Mensaje GRF", // Subject line
             text: "Hello world?", // plain text body
             html:   `<strong>Nombre=</strong> ${nombre} <br/>
